@@ -1,6 +1,6 @@
 # VLX IT Services
 
-Pastel website with no gradients, built with React, TypeScript, and Vinext.
+Pastel website with no gradients, built with React, TypeScript, and Next.js.
 
 ## Run locally (Windows, macOS, or Linux)
 
@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open the local address printed in your terminal (normally http://localhost:5173).
+Open the local address printed in your terminal (normally http://localhost:3000).
 
 ## Production build
 
@@ -20,7 +20,7 @@ npm run build
 npm start
 ```
 
-The current build targets Cloudflare Workers through Vinext. This is not a standard Next.js/Vercel deployment package; adaptation is needed for a different hosting target.
+The default scripts use Next.js and produce the .next output expected by Vercel. Import this repository on Vercel using the Next.js preset. No environment variables are required. The original Sites/Vinext commands remain available as npm run dev:sites and npm run build:sites.
 
 ## Main files
 
